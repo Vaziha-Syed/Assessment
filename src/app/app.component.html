@@ -1,30 +1,31 @@
+<h1>Assessment</h1>
 <div class="container">
   <div class="row">
-    <div class="col-md-12 p-6">
-  <app-users></app-users>
-</div>
-</div>
-</div>
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a routerLink="/">Home</a></li>
+        <li role="presentation"><a routerLink="/users">Users</a></li>
+        <li role="presentation"><a routerLink="/forms">Forms</a></li>
+        <li role="presentation"><a routerLink="/table">Table</a></li>
+        <li role="presentation"><a routerLink="/decorator">Decorator</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  </div>
+<!-- 
+  <div class="container">
+     <div class="row">
+      <div class="col-md-12 ps-6">
+      </div>
+     </div>
+    </div> -->
 
-<h1>{{ title }}</h1>
 
-      <table class="col-md-4">
-        <thead>
-          <tr>
-            <th>FirstName</th>
-            <th>LastName</th>
-            <th>Age</th>
-          </tr>
-        </thead>
-      <tbody>
-        <tr  *ngFor="let People of data;">
-          <td>{{People.FirstName}}</td>
-          <td>{{People.LastName}}</td>
-          <td>{{People.Age}}</td>
-        </tr>
-      </tbody>
-    </table>
-  
     
 
 
