@@ -1,0 +1,14 @@
+.style
+table, th, td {
+    border: 2px solid black
+ }
+
+/* .style
+table,th {
+    color: green
+}
+
+.style
+table,td {
+    color: blue
+} */

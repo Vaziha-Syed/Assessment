@@ -5,20 +5,35 @@
   </div>
 
  <h1>{{ title }}</h1>
-      <table class="col-md-4">
+      <table class="col-md-5 my-3 p-4">
         <thead>
           <tr>
-            <th>FirstName</th>
-            <th>LastName</th>
-            <th>Age</th>
+            <th class="text-center">FirstName</th>
+            <th class="text-center">LastName</th>
+            <th class="text-center">Age</th>
           </tr>
         </thead>
       <tbody>
         <tr  *ngFor="let People of data;">
-          <td>{{People.FirstName}}</td>
-          <td>{{People.LastName}}</td>
-          <td>{{People.Age}}</td>
+          <td class="text-center p-2">{{People.FirstName}}</td>
+          <td class="text-center p-2">{{People.LastName}}</td>
+          <td class="text-center p-2">{{People.Age}}</td>
         </tr>
       </tbody>
     </table>
+
+
+    <div class="my-3 ps-2 p-4">
+      <label class="fs-4">Choose color :-</label>
+      <select>
+        <option>select</option>
+        <option>Red</option>
+        <option>Blue</option>
+        <option>Green</option>
+        <option>Yellow</option>
+      </select>
+    </div>
+    
+
+
 
